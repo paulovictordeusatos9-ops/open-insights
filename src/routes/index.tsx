@@ -65,6 +65,7 @@ function Index() {
         <nav className={menuOpen ? "main-nav is-open" : "main-nav"}>
           <a href="#sobre" onClick={closeMenu}>O espaço</a>
           <a href="#servicos" onClick={closeMenu}>Serviços</a>
+          <a href="#trabalhos" onClick={closeMenu}>Trabalhos</a>
           <a href="#depoimentos" onClick={closeMenu}>Depoimentos</a>
           <a href="#duvidas" onClick={closeMenu}>Dúvidas</a>
         </nav>
@@ -131,6 +132,35 @@ function Index() {
           ))}
         </div>
         <div className="services-bottom"><span>Não sabe por onde começar?</span><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Converse com a gente <ArrowRight size={16} /></a></div>
+      </section>
+
+
+      <section className="portfolio section-pad" id="trabalhos">
+        <div className="portfolio-heading">
+          <div>
+            <div className="eyebrow"><span /> UM POUCO DO NOSSO TRABALHO</div>
+            <h2>Beleza que aparece<br /><em>nos detalhes.</em></h2>
+          </div>
+          <p>Inspire-se em diferentes estilos e encontre referências para o seu próximo momento de cuidado.</p>
+        </div>
+        <div className="portfolio-grid">
+          <a className="portfolio-item portfolio-item-tall" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver mais trabalhos no Instagram">
+            <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1000&q=85" alt="Cabelo com corte e acabamento profissional" loading="lazy" />
+            <span className="portfolio-overlay"><small>01 / CORTE & STYLING</small><strong>Seu estilo, sua identidade</strong><ArrowRight size={18} /></span>
+          </a>
+          <a className="portfolio-item" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver trabalhos de coloração no Instagram">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85" alt="Inspiração de beleza e cabelo" loading="lazy" />
+            <span className="portfolio-overlay"><small>02 / COR & LUMINOSIDADE</small><strong>Uma nova luz</strong><ArrowRight size={18} /></span>
+          </a>
+          <a className="portfolio-item" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver mais inspirações de cabelo no Instagram">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=85" alt="Inspiração para um visual elegante" loading="lazy" />
+            <span className="portfolio-overlay"><small>03 / CUIDADO & FINALIZAÇÃO</small><strong>O toque final</strong><ArrowRight size={18} /></span>
+          </a>
+        </div>
+        <div className="portfolio-bottom">
+          <span>Gostou de alguma referência?</span>
+          <a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Veja mais no Instagram <ArrowRight size={16} /></a>
+        </div>
       </section>
 
       <section className="testimonials section-pad" id="depoimentos">
