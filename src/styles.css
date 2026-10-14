@@ -274,4 +274,7 @@
     color: #d4af67 !important;
     -webkit-text-fill-color: #d4af67 !important;
   }
+
+#lovable-badge {
+display: none !important;
 }
