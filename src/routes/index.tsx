@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Sparkles, Star, X } from "lucide-react";
+import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Star, X } from "lucide-react";
 import retratoJosiane from "@/assets/retrato-josiane.png.asset.json";
 import logoJosiane from "@/assets/logo-josiane-severo.png.asset.json";
 
