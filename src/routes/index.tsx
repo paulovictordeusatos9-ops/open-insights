@@ -18,37 +18,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const services = [
-  {
-    number: "01",
-    title: "Corte & styling",
-    description: "Um corte pensado para valorizar seu rosto, seu estilo e a textura natural dos fios.",
-    image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1000&q=85",
-    tag: "Seu estilo, sua identidade",
-  },
-  {
-    number: "02",
-    title: "Coloração & mechas",
-    description: "Cor com personalidade, dimensão e luminosidade — respeitando a saúde dos seus cabelos.",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85",
-    tag: "Cor com intenção",
-  },
-  {
-    number: "03",
-    title: "Tratamentos capilares",
-    description: "Cuidados para devolver maciez, brilho e movimento, com atenção às necessidades dos fios.",
-    image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=85",
-    tag: "Cuidado de dentro para fora",
-  },
-  {
-    number: "04",
-    title: "Escova & finalização",
-    description: "Acabamento impecável e aquele movimento bonito que faz você se sentir ainda melhor.",
-    image: "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=1000&q=85",
-    tag: "O toque final",
-  },
-];
-
 const faqs = [
   { question: "Como faço para agendar um horário?", answer: "É só tocar no botão de agendamento e entrar em contato pelo Instagram. Você pode contar o que deseja fazer e combinar o melhor dia e horário." },
   { question: "Como saber qual serviço é ideal para meu cabelo?", answer: "Antes de definir o procedimento, converse sobre seu objetivo, histórico químico e rotina de cuidados. Assim fica mais fácil escolher uma opção adequada aos seus fios." },
@@ -74,7 +43,6 @@ function Index() {
         </button>
         <nav className={menuOpen ? "main-nav is-open" : "main-nav"}>
           <a href="#sobre" onClick={closeMenu}>O espaço</a>
-          <a href="#servicos" onClick={closeMenu}>Serviços</a>
           <a href="#trabalhos" onClick={closeMenu}>Trabalhos</a>
           <a href="#depoimentos" onClick={closeMenu}>Depoimentos</a>
           <a href="#duvidas" onClick={closeMenu}>Dúvidas</a>
@@ -92,7 +60,7 @@ function Index() {
           <p>Um espaço para renovar o visual, cuidar de você e sair se sentindo ainda mais confiante.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Vamos agendar <ArrowRight size={17} /></a>
-            <a className="text-link" href="#servicos">Conheça os serviços <ArrowDown size={15} /></a>
+            <a className="text-link" href="#trabalhos">Conheça nossos trabalhos <ArrowDown size={15} /></a>
           </div>
         </div>
       </section>
@@ -118,19 +86,6 @@ function Index() {
           </div>
         </div>
       </section>
-
-      <section className="services section-pad" id="servicos">
-        <div className="service-grid">
-          {services.map((service) => (
-            <article className="service-card" key={service.number}>
-              <div className="service-image"><img src={service.image} alt={service.title} loading="lazy" /><span className="service-number">{service.number}</span><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" className="service-arrow" aria-label={`Consultar ${service.title}`}><ArrowRight size={18} /></a></div>
-              <div className="service-info"><span className="service-tag">{service.tag}</span><h3>{service.title}</h3><p>{service.description}</p></div>
-            </article>
-          ))}
-        </div>
-        <div className="services-bottom"><span>Não sabe por onde começar?</span><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Converse com a gente <ArrowRight size={16} /></a></div>
-      </section>
-
 
       <section className="portfolio section-pad" id="trabalhos">
         <div className="portfolio-heading">
