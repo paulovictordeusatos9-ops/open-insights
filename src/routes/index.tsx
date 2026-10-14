@@ -121,12 +121,15 @@ function Index() {
       </section>
 
       <section className="testimonials section-pad" id="depoimentos">
-        <div className="testimonial-top"><div className="eyebrow"><span /> PALAVRAS QUE INSPIRAM</div><h2>O melhor resultado<br />é <em>você se sentir bem.</em></h2><p>Uma boa experiência começa com escuta, cuidado e atenção a cada detalhe.</p></div>
+        <div className="testimonial-top"><h2>O melhor resultado<br />é <em>você se sentir bem.</em></h2></div>
         <div className="testimonial-grid">
           {testimonials.map((item) => (
             <figure className="testimonial-card" key={item.name}>
-              <div className="testimonial-stars" aria-label="Avaliação: 5 de 5">{[0, 1, 2, 3, 4].map((star) => <Star key={star} size={13} fill="currentColor" strokeWidth={0} />)}</div>
-              <blockquote>&ldquo;{item.quote}&rdquo;</blockquote>
+              <div className="testimonial-head">
+                <div className="testimonial-stars" aria-label="Avaliação: 5 de 5">{[0, 1, 2, 3, 4].map((star) => <Star key={star} size={13} fill="currentColor" strokeWidth={0} />)}</div>
+                <span className="testimonial-glyph" aria-hidden="true">&ldquo;</span>
+              </div>
+              <blockquote>{item.quote}</blockquote>
               <figcaption>
                 <span className="testimonial-initials" aria-hidden="true">{item.name.split(" ").map((word) => word[0]).join("")}</span>
                 <span className="testimonial-who"><strong>{item.name}</strong><small>{item.service}</small></span>
@@ -134,7 +137,6 @@ function Index() {
             </figure>
           ))}
         </div>
-        <div className="testimonial-note"><span className="quote-mark">“</span><p>Seu próximo momento de cuidado começa com uma conversa. Conte o que você está buscando e vamos pensar no visual ideal para você.</p><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Fale com o espaço <ArrowRight size={16} /></a><small>Queremos ouvir sua experiência também.</small></div>
       </section>
 
       <section className="faq section-pad" id="duvidas">
