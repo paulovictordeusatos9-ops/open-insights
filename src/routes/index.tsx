@@ -122,10 +122,6 @@ function Index() {
       </section>
 
       <section className="services section-pad" id="servicos">
-        <div className="section-heading">
-          <div><div className="eyebrow"><span /> ENCONTRE SEU PRÓXIMO LOOK</div><h2>Seu cabelo merece<br /><em>esse cuidado.</em></h2></div>
-          <p>Do cuidado essencial à transformação que você está imaginando: vamos encontrar juntos o melhor caminho para seus fios.</p>
-        </div>
         <div className="service-grid">
           {services.map((service) => (
             <article className="service-card" key={service.number}>
