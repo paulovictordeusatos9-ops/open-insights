@@ -92,32 +92,25 @@ function Index() {
         </div>
       </section>
 
-      <section className="portfolio section-pad" id="trabalhos">
-        <div className="portfolio-heading">
+      <section className="detailed-services section-pad" id="detalhes-servicos">
+        <div className="detailed-services-heading">
           <div>
-            <div className="eyebrow"><span /> UM POUCO DO NOSSO TRABALHO</div>
-            <h2>Beleza que aparece<br /><em>nos detalhes.</em></h2>
+            <div className="eyebrow"><span /> CUIDADO PENSADO PARA VOCÊ</div>
+            <h2>Encontre o cuidado<br />ideal para <em>seus fios.</em></h2>
           </div>
-          <p>Inspire-se em diferentes estilos e encontre referências para o seu próximo momento de cuidado.</p>
+          <p>Conheça os serviços do Espaço Josiane Severo e escolha o que combina com seu momento, seu estilo e as necessidades do seu cabelo.</p>
         </div>
-        <div className="portfolio-grid">
-          <a className="portfolio-item portfolio-item-tall" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver mais trabalhos no Instagram">
-            <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1000&q=85" alt="Cabelo com corte e acabamento profissional" loading="lazy" />
-            <span className="portfolio-overlay"><small>01 / CORTE & STYLING</small><strong>Seu estilo, sua identidade</strong><ArrowRight size={18} /></span>
-          </a>
-          <a className="portfolio-item" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver trabalhos de coloração no Instagram">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85" alt="Inspiração de beleza e cabelo" loading="lazy" />
-            <span className="portfolio-overlay"><small>02 / COR & LUMINOSIDADE</small><strong>Uma nova luz</strong><ArrowRight size={18} /></span>
-          </a>
-          <a className="portfolio-item" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer" aria-label="Ver mais inspirações de cabelo no Instagram">
-            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=85" alt="Inspiração para um visual elegante" loading="lazy" />
-            <span className="portfolio-overlay"><small>03 / CUIDADO & FINALIZAÇÃO</small><strong>O toque final</strong><ArrowRight size={18} /></span>
-          </a>
+        <div className="detailed-services-grid">
+          <article className="detail-service-card"><span className="detail-service-number">01</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Corte feminino</h3><p>Um corte personalizado para valorizar o formato do rosto, respeitar a textura dos fios e combinar com sua rotina.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">02</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Escova e finalização</h3><p>Fios alinhados, movimento e acabamento cuidadoso para o dia a dia, eventos ou aquela ocasião especial.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">03</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Coloração</h3><p>Renove a cor com uma escolha personalizada, levando em conta o resultado desejado e a condição atual dos cabelos.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">04</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Mechas e iluminação</h3><p>Dimensão, luminosidade e profundidade para realçar o visual com uma proposta alinhada ao seu estilo.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">05</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Hidratação e nutrição</h3><p>Cuidados voltados à maciez, ao brilho e à reposição de nutrientes, de acordo com as necessidades dos fios.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">06</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Reconstrução capilar</h3><p>Tratamento direcionado aos fios fragilizados, com avaliação prévia para definir o cuidado mais adequado.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">07</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Penteados</h3><p>Produções para festas, comemorações e momentos especiais, pensadas para combinar com sua roupa e personalidade.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
+          <article className="detail-service-card"><span className="detail-service-number">08</span><div className="detail-service-icon"><Sparkles size={21} /></div><h3>Avaliação capilar</h3><p>Uma conversa para entender seu objetivo, o histórico dos fios e as possibilidades antes de escolher o procedimento.</p><a href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Consultar serviço <ArrowRight size={15} /></a></article>
         </div>
-        <div className="portfolio-bottom">
-          <span>Gostou de alguma referência?</span>
-          <a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Veja mais no Instagram <ArrowRight size={16} /></a>
-        </div>
+        <div className="detailed-services-bottom"><span>Quer saber qual serviço combina com você?</span><a className="button button-dark" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Fale com a gente <ArrowRight size={16} /></a></div>
       </section>
 
       <section className="testimonials section-pad" id="depoimentos">
