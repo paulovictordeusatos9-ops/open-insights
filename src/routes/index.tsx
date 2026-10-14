@@ -94,7 +94,6 @@ function Index() {
             <a className="button button-dark" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Vamos agendar <ArrowRight size={17} /></a>
             <a className="text-link" href="#servicos">Conheça os serviços <ArrowDown size={15} /></a>
           </div>
-          <div className="hero-note"><span className="note-icon"><Sparkles size={17} /></span><span><strong>Seu momento de cuidado</strong><small>Beleza com atenção aos detalhes.</small></span></div>
         </div>
       </section>
 
@@ -104,8 +103,7 @@ function Index() {
 
       <section className="about section-pad" id="sobre">
         <div className="about-image-wrap">
-          <img src={retratoJosiane.url} alt="Retrato elegante no salão de beleza" />
-          <div className="about-image-label"><span>01</span><span>BELEZA, LEVEZA E CUIDADO</span></div>
+          <img src={retratoJosiane.url} alt="Retrato elegante no salão de beleza" width={1024} height={1536} />
         </div>
         <div className="about-copy">
           <div className="eyebrow"><span /> UM ESPAÇO PARA VOCÊ</div>
