@@ -114,7 +114,7 @@ function Index() {
       </section>
 
       <section className="testimonials section-pad" id="depoimentos">
-        <div className="testimonial-top"><div className="eyebrow"><span /> PALAVRAS QUE INSPIRAM</div><h2>O melhor resultado<br />é <em>você se sentir bem.</em></h2><p>Uma boa experiência começa com escuta, cuidado e atenção a cada detalhe.</p></div>
+        <div className="testimonial-top"><div className="eyebrow"><span /> DEPOIMENTOS</div><h2>Histórias reais,<br /><em>carinho em cada detalhe.</em></h2></div>
         <div className="testimonial-grid">
           {testimonials.map((item) => (
             <figure className="testimonial-card" key={item.name}>
