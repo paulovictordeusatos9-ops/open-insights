@@ -73,6 +73,10 @@ function Index() {
 
       <section className="hero" id="inicio">
         <div className="hero-copy">
+          <a href="#inicio" className="wordmark hero-logo" aria-label="Espaço Josiane Severo, início">
+            <span className="wordmark-main">josiane <i>severo</i></span>
+            <span className="wordmark-sub">ESPAÇO DE BELEZA</span>
+          </a>
           <div className="eyebrow"><span /> BELEZA QUE TEM A SUA ESSÊNCIA</div>
           <h1>Seu cabelo.<br />Sua história.<br /><em>Sua melhor versão.</em></h1>
           <p>Um espaço para renovar o visual, cuidar de você e sair se sentindo ainda mais confiante.</p>
