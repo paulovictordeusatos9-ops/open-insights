@@ -47,10 +47,11 @@ function Index() {
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
         <nav className={menuOpen ? "main-nav is-open" : "main-nav"}>
-          <a href="#sobre" onClick={closeMenu}>O espaço</a>
-          <a href="#trabalhos" onClick={closeMenu}>Trabalhos</a>
+          <a href="#inicio" onClick={closeMenu}>Principal</a>
+          <a href="#detalhes-servicos" onClick={closeMenu}>Serviços</a>
           <a href="#depoimentos" onClick={closeMenu}>Depoimentos</a>
-          <a href="#duvidas" onClick={closeMenu}>Dúvidas</a>
+          <a href="#duvidas" onClick={closeMenu}>Perguntas frequentes</a>
+          <a href="#contato" onClick={closeMenu}>Contato</a>
         </nav>
         <a className="header-cta" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende seu horário <ArrowRight size={15} /></a>
       </header>
@@ -135,7 +136,7 @@ function Index() {
         <div className="faq-list">{faqs.map((faq, index) => <div className={openFaq === index ? "faq-item active" : "faq-item"} key={faq.question}><button className="faq-question" onClick={() => setOpenFaq(openFaq === index ? null : index)} aria-expanded={openFaq === index}><span><i>0{index + 1}</i>{faq.question}</span><ChevronDown size={19} /></button>{openFaq === index && <p className="faq-answer">{faq.answer}</p>}</div>)}</div>
       </section>
 
-      <section className="final-cta"><div className="eyebrow eyebrow-light"><span /> SEU PRÓXIMO CAPÍTULO</div><h2>Vamos cuidar<br />de <em>você?</em></h2><p>Seu próximo visual começa com uma mensagem.</p><a className="button button-light" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende pelo Instagram <ArrowRight size={17} /></a><span className="cta-sparkle sparkle-one">✳</span><span className="cta-sparkle sparkle-two">✳</span></section>
+      <section className="final-cta" id="contato"><div className="eyebrow eyebrow-light"><span /> SEU PRÓXIMO CAPÍTULO</div><h2>Vamos cuidar<br />de <em>você?</em></h2><p>Seu próximo visual começa com uma mensagem.</p><a className="button button-light" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende pelo Instagram <ArrowRight size={17} /></a><span className="cta-sparkle sparkle-one">✳</span><span className="cta-sparkle sparkle-two">✳</span></section>
 
       <footer className="site-footer"><a href="#inicio" className="wordmark footer-wordmark"><img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} loading="lazy" /></a><span>Beleza com identidade. Cuidado em cada detalhe.</span><a className="footer-instagram" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram <ArrowRight size={14} /></a><small>© {new Date().getFullYear()} Espaço Josiane Severo</small></footer>
     </main>
