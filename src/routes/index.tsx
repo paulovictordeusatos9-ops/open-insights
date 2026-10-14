@@ -42,11 +42,7 @@ function Index() {
 
   return (
     <main className="salon-site">
-      <div className="announcement"><Sparkles size={13} /> Um momento para você. Um cuidado que faz a diferença.</div>
       <header className="site-header">
-        <a href="#inicio" className="wordmark" onClick={closeMenu} aria-label="Espaço Josiane Severo, início">
-          <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} />
-        </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
