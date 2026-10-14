@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Sparkles, X } from "lucide-react";
+import retratoJosiane from "@/assets/retrato-josiane.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -95,7 +96,7 @@ function Index() {
 
       <section className="about section-pad" id="sobre">
         <div className="about-image-wrap">
-          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1100&q=85" alt="Interior acolhedor de um salão de beleza" />
+          <img src={retratoJosiane.url} alt="Retrato elegante no salão de beleza" />
           <div className="about-image-label"><span>01</span><span>BELEZA, LEVEZA E CUIDADO</span></div>
         </div>
         <div className="about-copy">
