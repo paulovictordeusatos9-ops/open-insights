@@ -3,4 +3,4 @@
 - [x] Remover o cartão "Seu momento de cuidado" da primeira seção
 - [x] Remover a etiqueta "01 / BELEZA, LEVEZA E CUIDADO" e a moldura ao redor da foto da segunda seção
 - [x] Exibir a foto por completo (sem corte)
-- [ ] Remover a seção inteira de serviços (os quatro cartões)
+- [x] Remover a seção inteira de serviços (os quatro cartões)
