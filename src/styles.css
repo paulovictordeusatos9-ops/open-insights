@@ -82,6 +82,5 @@
 .testimonial-who{display:flex;flex-direction:column;gap:3px;min-width:0}
 .testimonial-who strong{font-size:11px;font-weight:600}
 .testimonial-who small{font-size:9px;color:var(--muted)}
-.testimonial-note{max-width:660px;border-left:1px solid var(--border);padding:6px 0 6px 30px}
 @media(max-width:1000px){.testimonial-grid{grid-template-columns:1fr 1fr;gap:13px}}
-@media(max-width:700px){.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:24px 20px 20px;border-radius:18px}.testimonial-note{padding-left:22px}}
+@media(max-width:700px){.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:24px 20px 20px;border-radius:18px}}
