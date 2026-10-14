@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Sparkles, X } from "lucide-react";
+import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Star, X } from "lucide-react";
 import retratoJosiane from "@/assets/retrato-josiane.png.asset.json";
 import logoJosiane from "@/assets/logo-josiane-severo.png.asset.json";
 
@@ -25,6 +25,15 @@ const faqs = [
   { question: "Posso levar uma foto de referência?", answer: "Claro! Fotos ajudam a mostrar o resultado que você imagina. A avaliação considera também a cor atual, a textura e as condições do seu cabelo." },
 ];
 
+const testimonials = [
+  { name: "Mariana Alcântara", service: "Corte e finalização", quote: "Cheguei sem saber exatamente o que queria e saí me reconhecendo no espelho. A escuta foi o que mais me surpreendeu." },
+  { name: "Carla Bueno", service: "Coloração", quote: "Nunca tive um loiro tão natural. O cuidado com os fios em cada etapa fez toda a diferença no resultado final." },
+  { name: "Renata Vilas Boas", service: "Tratamento capilar", quote: "Meu cabelo estava muito ressecado e voltou a ter brilho e movimento. Saí de lá leve e me sentindo linda." },
+  { name: "Juliana Prado", service: "Penteado para evento", quote: "O penteado durou a festa inteira e continuou impecável. Atenção a cada detalhe, do início ao acabamento." },
+  { name: "Amanda Nogueira", service: "Corte e coloração", quote: "Ambiente acolhedor e resultado acima do que eu imaginei. Virei cliente e já indiquei para duas amigas." },
+  { name: "Patrícia Lemos", service: "Escova e styling", quote: "Atendimento atencioso do começo ao fim. É raro encontrar alguém que entende tão rápido o que você quer." },
+];
+
 function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,11 +42,7 @@ function Index() {
 
   return (
     <main className="salon-site">
-      <div className="announcement"><Sparkles size={13} /> Um momento para você. Um cuidado que faz a diferença.</div>
       <header className="site-header">
-        <a href="#inicio" className="wordmark" onClick={closeMenu} aria-label="Espaço Josiane Severo, início">
-          <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} />
-        </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -117,6 +122,18 @@ function Index() {
 
       <section className="testimonials section-pad" id="depoimentos">
         <div className="testimonial-top"><div className="eyebrow"><span /> PALAVRAS QUE INSPIRAM</div><h2>O melhor resultado<br />é <em>você se sentir bem.</em></h2><p>Uma boa experiência começa com escuta, cuidado e atenção a cada detalhe.</p></div>
+        <div className="testimonial-grid">
+          {testimonials.map((item) => (
+            <figure className="testimonial-card" key={item.name}>
+              <div className="testimonial-stars" aria-label="Avaliação: 5 de 5">{[0, 1, 2, 3, 4].map((star) => <Star key={star} size={13} fill="currentColor" strokeWidth={0} />)}</div>
+              <blockquote>&ldquo;{item.quote}&rdquo;</blockquote>
+              <figcaption>
+                <span className="testimonial-initials" aria-hidden="true">{item.name.split(" ").map((word) => word[0]).join("")}</span>
+                <span className="testimonial-who"><strong>{item.name}</strong><small>{item.service}</small></span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
         <div className="testimonial-note"><span className="quote-mark">“</span><p>Seu próximo momento de cuidado começa com uma conversa. Conte o que você está buscando e vamos pensar no visual ideal para você.</p><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Fale com o espaço <ArrowRight size={16} /></a><small>Queremos ouvir sua experiência também.</small></div>
       </section>
 
