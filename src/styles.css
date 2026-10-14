@@ -82,3 +82,11 @@
 .testimonial-note{max-width:660px;border-left:1px solid var(--border);padding:6px 0 6px 30px}
 @media(max-width:1000px){.testimonial-grid{grid-template-columns:1fr 1fr;gap:12px}.testimonial-card blockquote{font-size:16px}}
 @media(max-width:700px){.testimonial-top{grid-template-columns:1fr;gap:16px}.testimonial-top>p{justify-self:start;margin:0}.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:22px 18px 18px}.testimonial-note{padding-left:22px}}
+
+
+/* Centralizar as opções de navegação do cabeçalho */
+.site-header{position:relative}
+.site-header .main-nav{margin-inline:auto;justify-content:center}
+@media(min-width:701px){
+  .site-header .main-nav{position:absolute;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 340px)}
+}
