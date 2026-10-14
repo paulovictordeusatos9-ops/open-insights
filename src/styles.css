@@ -221,3 +221,22 @@
   color:#b99a56;
   opacity:.6;
 }
+
+
+/* Separadores entre seções mais espessos e visíveis */
+.salon-site > section.section-pad,
+.salon-site > section.about,
+.salon-site > section.services,
+.salon-site > section.portfolio,
+.salon-site > section.testimonials,
+.salon-site > section.faq{
+  border-top:3px solid #111;
+}
+.salon-site > .marquee{
+  border-top:3px solid #111;
+  border-bottom:3px solid #111;
+}
+.salon-site > .final-cta{
+  border-top:3px solid #111;
+  border-bottom:3px solid #111;
+}
