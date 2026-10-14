@@ -82,26 +82,10 @@ function Index() {
         <a className="header-cta" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende seu horário <ArrowRight size={15} /></a>
       </header>
 
-      <section className="hero" id="inicio">
-        <div className="hero-copy">
-          <a href="#inicio" className="wordmark hero-logo" aria-label="Espaço Josiane Severo, início">
-            <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} fetchPriority="high" />
-          </a>
-          <div className="eyebrow"><span /> BELEZA QUE TEM A SUA ESSÊNCIA</div>
-          <h1>Seu cabelo.<br />Sua história.<br /><em>Sua melhor versão.</em></h1>
-          <p>Um espaço para renovar o visual, cuidar de você e sair se sentindo ainda mais confiante.</p>
-          <div className="hero-actions">
-            <a className="button button-dark" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Vamos agendar <ArrowRight size={17} /></a>
-            <a className="text-link" href="#servicos">Conheça os serviços <ArrowDown size={15} /></a>
-          </div>
-          <div className="hero-note"><span className="note-icon"><Sparkles size={17} /></span><span><strong>Seu momento de cuidado</strong><small>Beleza com atenção aos detalhes.</small></span></div>
-        </div>
-        <div className="hero-visual">
-          <div className="hero-photo" role="img" aria-label="Cabelo longo, saudável e com brilho" />
-          <div className="photo-caption"><span>BELEZA EM CADA DETALHE</span><span>01 / 04</span></div>
-          <div className="floating-stamp"><span>SEU</span><span>MOMENTO</span><Sparkles size={19} /></div>
-          <div className="hero-outline" />
-        </div>
+      <section className="hero hero-logo-only" id="inicio" aria-label="Espaço Josiane Severo">
+        <a href="#inicio" className="wordmark hero-logo" aria-label="Espaço Josiane Severo, início">
+          <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} fetchPriority="high" />
+        </a>
       </section>
 
       <div className="marquee" aria-label="Cuidado, beleza e autoestima">
