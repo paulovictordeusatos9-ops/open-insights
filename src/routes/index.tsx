@@ -96,7 +96,7 @@ function Index() {
       <section className="detailed-services section-pad" id="detalhes-servicos">
         <div className="detailed-services-heading">
           <div>
-            <div className="eyebrow"><span /> CUIDADO PENSADO PARA VOCÊ</div>
+            <div className="eyebrow"><span /> SERVIÇOS</div>
             <h2>Encontre o cuidado<br />ideal para <em>seus fios.</em></h2>
           </div>
           <p>Conheça os serviços do Espaço Josiane Severo e escolha o que combina com seu momento, seu estilo e as necessidades do seu cabelo.</p>
