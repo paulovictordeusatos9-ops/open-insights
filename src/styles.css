@@ -90,3 +90,22 @@
 @media(min-width:701px){
   .site-header .main-nav{position:absolute;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 340px)}
 }
+
+
+/* Linhas pretas para separar visualmente as seções principais */
+.salon-site > section.section-pad,
+.salon-site > section.about,
+.salon-site > section.services,
+.salon-site > section.portfolio,
+.salon-site > section.testimonials,
+.salon-site > section.faq{
+  border-top:1px solid #111;
+}
+.salon-site > .marquee{
+  border-top:1px solid #111;
+  border-bottom:1px solid #111;
+}
+.salon-site > .final-cta{
+  border-top:1px solid #111;
+  border-bottom:1px solid #111;
+}
