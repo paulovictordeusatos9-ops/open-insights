@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Use the uploaded logo asset for site branding and its matching favicon; define the shared palette and background texture in global CSS so all sections remain visually consistent.

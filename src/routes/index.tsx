@@ -2,8 +2,19 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ArrowRight, Check, ChevronDown, Instagram, Menu, Sparkles, X } from "lucide-react";
 import retratoJosiane from "@/assets/retrato-josiane.png.asset.json";
+import logoJosiane from "@/assets/logo-josiane-severo.png.asset.json";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Josiane Severo | Salão de Beleza" },
+      { name: "description", content: "Conheça o Espaço Josiane Severo: cortes, coloração e cuidados capilares. Agende seu momento de beleza pelo Instagram." },
+      { property: "og:title", content: "Josiane Severo | Salão de Beleza" },
+      { property: "og:description", content: "Beleza com identidade e cuidado em cada fio no Espaço Josiane Severo." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
@@ -56,8 +67,7 @@ function Index() {
       <div className="announcement"><Sparkles size={13} /> Um momento para você. Um cuidado que faz a diferença.</div>
       <header className="site-header">
         <a href="#inicio" className="wordmark" onClick={closeMenu} aria-label="Espaço Josiane Severo, início">
-          <span className="wordmark-main">josiane <i>severo</i></span>
-          <span className="wordmark-sub">ESPAÇO DE BELEZA</span>
+          <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} />
         </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -75,8 +85,7 @@ function Index() {
       <section className="hero" id="inicio">
         <div className="hero-copy">
           <a href="#inicio" className="wordmark hero-logo" aria-label="Espaço Josiane Severo, início">
-            <span className="wordmark-main">josiane <i>severo</i></span>
-            <span className="wordmark-sub">ESPAÇO DE BELEZA</span>
+            <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} fetchPriority="high" />
           </a>
           <div className="eyebrow"><span /> BELEZA QUE TEM A SUA ESSÊNCIA</div>
           <h1>Seu cabelo.<br />Sua história.<br /><em>Sua melhor versão.</em></h1>
@@ -175,7 +184,7 @@ function Index() {
 
       <section className="final-cta"><div className="eyebrow eyebrow-light"><span /> SEU PRÓXIMO CAPÍTULO</div><h2>Vamos cuidar<br />de <em>você?</em></h2><p>Seu próximo visual começa com uma mensagem.</p><a className="button button-light" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende pelo Instagram <ArrowRight size={17} /></a><span className="cta-sparkle sparkle-one">✳</span><span className="cta-sparkle sparkle-two">✳</span></section>
 
-      <footer className="site-footer"><a href="#inicio" className="wordmark footer-wordmark"><span className="wordmark-main">josiane <i>severo</i></span><span className="wordmark-sub">ESPAÇO DE BELEZA</span></a><span>Beleza com identidade. Cuidado em cada detalhe.</span><a className="footer-instagram" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram <ArrowRight size={14} /></a><small>© {new Date().getFullYear()} Espaço Josiane Severo</small></footer>
+      <footer className="site-footer"><a href="#inicio" className="wordmark footer-wordmark"><img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} loading="lazy" /></a><span>Beleza com identidade. Cuidado em cada detalhe.</span><a className="footer-instagram" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer"><Instagram size={17} /> Instagram <ArrowRight size={14} /></a><small>© {new Date().getFullYear()} Espaço Josiane Severo</small></footer>
     </main>
   );
 }
