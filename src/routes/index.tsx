@@ -64,7 +64,6 @@ function Index() {
         <nav className={menuOpen ? "main-nav is-open" : "main-nav"}>
           <a href="#sobre" onClick={closeMenu}>O espaço</a>
           <a href="#servicos" onClick={closeMenu}>Serviços</a>
-          <a href="#trabalhos" onClick={closeMenu}>Inspirações</a>
           <a href="#depoimentos" onClick={closeMenu}>Depoimentos</a>
           <a href="#duvidas" onClick={closeMenu}>Dúvidas</a>
         </nav>
@@ -127,16 +126,6 @@ function Index() {
           ))}
         </div>
         <div className="services-bottom"><span>Não sabe por onde começar?</span><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Converse com a gente <ArrowRight size={16} /></a></div>
-      </section>
-
-      <section className="inspiration" id="trabalhos">
-        <div className="inspiration-copy"><div className="eyebrow eyebrow-light"><span /> INSPIRE-SE</div><h2>Um novo visual<br />pode mudar <em>o seu dia.</em></h2><p>Salve suas referências, imagine possibilidades e venha conversar sobre o cabelo que combina com você.</p><a className="button button-light" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer"><Instagram size={17} /> Ver trabalhos no Instagram <ArrowRight size={16} /></a></div>
-        <div className="inspiration-gallery">
-          <img className="gallery-one" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=85" alt="Inspiração de cabelo com movimento" loading="lazy" />
-          <img className="gallery-two" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=85" alt="Retrato de mulher com cabelo natural" loading="lazy" />
-          <img className="gallery-three" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=85" alt="Inspiração de beleza e estilo" loading="lazy" />
-          <span className="gallery-caption">ENCONTRE SUA INSPIRAÇÃO ↗</span>
-        </div>
       </section>
 
       <section className="testimonials section-pad" id="depoimentos">
