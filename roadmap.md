@@ -9,3 +9,4 @@
 - [x] Remover a faixa de aviso no topo ("Um momento para você...")
 - [x] Deixar os cartões de depoimento mais modernos
 - [x] Remover a etiqueta "Palavras que inspiram" e a frase abaixo do título dos depoimentos
+- [x] Remover o bloco de convite ("Seu próximo momento de cuidado...") no fim dos depoimentos

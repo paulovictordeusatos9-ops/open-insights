@@ -137,7 +137,6 @@ function Index() {
             </figure>
           ))}
         </div>
-        <div className="testimonial-note"><span className="quote-mark">“</span><p>Seu próximo momento de cuidado começa com uma conversa. Conte o que você está buscando e vamos pensar no visual ideal para você.</p><a className="text-link" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Fale com o espaço <ArrowRight size={16} /></a><small>Queremos ouvir sua experiência também.</small></div>
       </section>
 
       <section className="faq section-pad" id="duvidas">
