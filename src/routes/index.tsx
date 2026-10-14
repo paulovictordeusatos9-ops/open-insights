@@ -82,11 +82,11 @@ function Index() {
         <a className="header-cta" href="https://www.instagram.com/espacojosianesevero/" target="_blank" rel="noreferrer">Agende seu horário <ArrowRight size={15} /></a>
       </header>
 
-      <section className="hero" id="inicio">
+      <section className="hero hero-with-logo" id="inicio">
+        <a href="#inicio" className="wordmark hero-logo hero-logo-side" aria-label="Espaço Josiane Severo, início">
+          <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} fetchPriority="high" />
+        </a>
         <div className="hero-copy">
-          <a href="#inicio" className="wordmark hero-logo" aria-label="Espaço Josiane Severo, início">
-            <img className="site-logo" src={logoJosiane.url} alt="Josiane Severo — Salão de Beleza" width={1448} height={1086} fetchPriority="high" />
-          </a>
           <div className="eyebrow"><span /> BELEZA QUE TEM A SUA ESSÊNCIA</div>
           <h1>Seu cabelo.<br />Sua história.<br /><em>Sua melhor versão.</em></h1>
           <p>Um espaço para renovar o visual, cuidar de você e sair se sentindo ainda mais confiante.</p>
