@@ -185,3 +185,39 @@
  .detail-service-card,.detail-service-card:before,.detail-service-icon,.testimonial-card{transition:none}
  .detail-service-card:hover,.testimonial-card:hover{transform:none}
 }
+
+
+/* Chamada final: alto contraste na identidade preto e dourado */
+.salon-site > .final-cta{
+  background:#171614;
+  color:#f7f1e5;
+  border-top:2px solid #b99a56;
+}
+.salon-site > .final-cta .eyebrow{
+  color:#e6ce91;
+}
+.salon-site > .final-cta .eyebrow>span{
+  background:#b99a56;
+}
+.salon-site > .final-cta h2{
+  color:#fffaf0;
+}
+.salon-site > .final-cta h2 em{
+  color:#e6ce91;
+}
+.salon-site > .final-cta>p{
+  color:#e8e1d4;
+}
+.salon-site > .final-cta .button-light{
+  background:#d5b66d;
+  color:#171614;
+  border:1px solid #e6ce91;
+  font-weight:700;
+}
+.salon-site > .final-cta .button-light:hover{
+  background:#f0d895;
+}
+.salon-site > .final-cta .cta-sparkle{
+  color:#b99a56;
+  opacity:.6;
+}
